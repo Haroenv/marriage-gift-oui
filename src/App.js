@@ -24,7 +24,9 @@ const intro = [
   'en nog iets om van te genieten samen',
 ].map((text, i, arr) => ({ setStep, step }) => (
   <div>
-    <p className="fade-in">{text}</p>
+    <p className="fade-in" style={{ margin: '1em .5em' }}>
+      {text}
+    </p>
     <button className="btn fade-in" onClick={() => setStep(step + 1)}>
       {i === arr.length - 1 ? 'dit dus:' : i === 0 ? 'start' : 'ok?'}
     </button>
