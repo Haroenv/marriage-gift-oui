@@ -17,6 +17,8 @@ const intro = [
   'noppes',
   'allez',
   'behalve één iets natuurlijk',
+  'de allerbeste wensen voor jullie huwelijk',
+  'en nog iets om van te genieten samen',
 ].map((text, i, arr) => ({ setStep, step }) => (
   <div>
     <p className="fade-in">{text}</p>
