@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
 const intro = [
+  <span style={{ fontSize: '1.5em', fontWeight: 'bold' }}>
+    Lieve Lotje en Pieter
+  </span>,
   'Wij weten dat jullie graag skiën',
   'Oostenrijk is hier prima voor',
   'Maar ook in Japan kan je skiën',
@@ -23,7 +26,7 @@ const intro = [
   <div>
     <p className="fade-in">{text}</p>
     <button className="btn fade-in" onClick={() => setStep(step + 1)}>
-      {i === arr.length - 1 ? 'dit dus:' : 'ok?'}
+      {i === arr.length - 1 ? 'dit dus:' : i === 0 ? 'start' : 'ok?'}
     </button>
   </div>
 ));
